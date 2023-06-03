@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/dac5c0dc0b.js" crossorigin="anonymous"></script>    
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>ShareTrip: Book Air Tickets, Hotels, Packages Online</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="full_container header">
+        <div class="fix_container header__inner">
+            <div class="header__inner__left header__inner__single">
+                <a href="#"><img src="./img/full-logo.png" alt="logo"></a>
+            </div>
+            <div class="header__inner__mid header__inner__single">
+                <ul>
+                    <li>
+                        <a href="#">Flight</a>
+                    </li>
+                    <li>
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li>
+                        <a href="#">Holiday</a>
+                    </li>
+                    <li>
+                        <span>Visa</span> 
+                        <i class="fa fa-light fa-angle-down"></i>
+                        <ul>
+                            <li>
+                                <a href="#">Visa Application</a>
+                            </li>
+                            <li>
+                                <a href="#">Visa Guide</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Blog</span> 
+                        <i class="fa fa-light fa-angle-down"></i>
+                        <ul>
+                            <li>
+                                <a href="#">Travel Fuide</a>
+                            </li>
+                            <li>
+                                <a href="#">Travel Advisory</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News & Media</a>
+                    </li>
+                    <li>
+                        <span>Promotions</span>
+                        <i class="fa fa-light fa-angle-down"></i>
+                        <ul>
+                            <li>
+                                <a href="#">All offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Value-added Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Flight</a>
+                            </li>
+                            <li>
+                                <a href="#">Hotel</a>
+                            </li>
+                            <li>
+                                <a href="#">Holidays</a>
+                            </li>
+                            <li>
+                                <a href="#">SkyTrip</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__inner__right header__inner__single">
+                <button class="spin">
+                    <img src="./img/spinner.svg" alt="">
+                    <span>Spin to Win</span>
+                </button>
+                <button class="menu">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-regular fa-bars-sort"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER -->  
+
+    <!-- MAIN -->
+    <!-- hero section -->
+    <div class="full_container hero">
+        <div class="fix_container hero__inner">
+            <h1>Welcome to ShareTrip! Find Flights, Hotels & Tour Packages</h1>
+            <div class="hero__inner__box">
+                <div class="hero__inner__box__head">
+                    <div class="hero__inner__box__head__single">
+                        <img src="./img/flight-mono.svg" alt="Flight">
+                        <span>Flight</span>
+                    </div>
+                    <div class="hero__inner__box__head__single">
+                        <img src="./img/hotel-mono.svg" alt="Hotel">
+                        <span>Hotel</span>
+                    </div>
+                    <div class="hero__inner__box__head__single">
+                        <img src="./img/holiday-mono.svg" alt="Holiday">
+                        <span>Holiday</span>
+                    </div>
+                    <div class="hero__inner__box__head__single">
+                        <img src="./img/visa-mono.svg" alt="Visa">
+                        <span>Visa</span>
+                    </div>
+                </div>
+                <div class="hero__inner__box__body">
+                    <div class="options">
+                        <div class="btns">
+                            <button>One Way</button>
+                            <button>Round Trip</button>
+                            <button>Multi-City</button>
+                        </div>
+                    </div>
+                    <div class="flight_details">
+                        <div class="from_to details_single">
+                            <div class="from_item item">
+                                <small>Flying from</small>
+                                <h4>Dhaka</h4>
+                                <p>Bangladesh, Hazrat Shahjalal Int...</p>
+                                <div class="ft_box toggle_box from_box">
+                                    <ul>
+                                        <li>
+                                            <span>DAC</span>
+                                            <span>Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                        </li>
+                                        <li>
+                                            <span>DAX</span>
+                                            <span>China, Dachuan Airport (DAX)</span>
+                                        </li>
+                                        <li>
+                                            <span>SLK</span>
+                                            <span>United States, Adirondack Regional Airport (SLK)</span>
+                                        </li>
+                                        <li>
+                                            <span>CGP</span>
+                                            <span>Bangladesh, Shah Amanat International Airport (CGP)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="to_item item">
+                                <small>Flying to</small>
+                                <h4>CGP</h4>
+                                <p>Bangladesh, Shah Amanat Intern...</p>
+                                <div class="ft_box toggle_box to_box">
+                                    <ul>
+                                        <li>
+                                            <span>DAC</span>
+                                            <span>Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                        </li>
+                                        <li>
+                                            <span>DAX</span>
+                                            <span>China, Dachuan Airport (DAX)</span>
+                                        </li>
+                                        <li>
+                                            <span>SLK</span>
+                                            <span>United States, Adirondack Regional Airport (SLK)</span>
+                                        </li>
+                                        <li>
+                                            <span>CGP</span>
+                                            <span>Bangladesh, Shah Amanat International Airport (CGP)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depart_return details_single">
+                            <div class="depart_item item">
+                                <small>Depart on</small>
+                                <h4>Dhaka</h4>
+                                <p>Bangladesh, Hazrat Shahjalal Int...</p>
+                                <div class="dt_box toggle_box depart_box">
+                                    <input type="date" name="depart_date" id="">
+                                </div>
+                            </div>
+                            <div class="return_item item">
+                                <small>Return on</small>
+                                <h4>Dhaka</h4>
+                                <p>Bangladesh, Hazrat Shahjalal Int...</p>
+                                <div class="dt_box toggle_box return_box">
+                                    <input type="date" name="return_date" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="num_person details_single">
+                            <div class="item person_item">
+                                <small>Passengers & Cabin Class</small>
+                                <h4>1 Person</h4>
+                                <p>Economy class</p>
+                                <div class="np_box toggle_box person_box">
+                                    <div class="head">
+                                        <h5>Passengers</h5>
+                                        <i class="fa fa-regular fa-xmark"></i>
+                                    </div>
+                                    <div class="body">
+                                        <div class="single">
+                                            <div class="ss count">
+                                                1
+                                            </div>
+                                            <div class="ss dtls">
+                                                <h6>Adults</h6>
+                                                <p>12 years and above</p>
+                                            </div>
+                                            <div class="ss in_dr">
+                                                <button>
+                                                    <i class="fa fa-light fa-minus"></i>
+                                                    <i class="fa fa-light fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="single">
+                                            <div class="ss count">
+                                                0
+                                            </div>
+                                            <div class="ss dtls">
+                                                <h6>Children</h6>
+                                                <p>2-11 years at the time of travel</p>
+                                            </div>
+                                            <div class="ss in_dr">
+                                                <button>
+                                                    <i class="fa fa-light fa-minus"></i>
+                                                    <i class="fa fa-light fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="single">
+                                            <div class="ss count">
+                                                0
+                                            </div>
+                                            <div class="ss dtls">
+                                                <h6>Infants</h6>
+                                                <p>0-23 months at the time of travel</p>
+                                            </div>
+                                            <div class="ss in_dr">
+                                                <button>
+                                                    <i class="fa fa-light fa-minus"></i>
+                                                    <i class="fa fa-light fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="foot">
+                                        <ul>
+                                            <li>Cabin Class</li>
+                                            <li class="active">
+                                                <span>Economy Class</span>
+                                                <span>
+                                                    <i class="fa fa-regular fa-tick"></i>
+                                                </span>
+                                            </li>
+                                            <li>Premium Economy</li>
+                                            <li>Business Class</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__inner__box__foot">
+                    <button class="btn btn_orange"></button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- end of hero section -->
+
+    <!-- visa section -->
+    <div class="full_container visa">
+        <div class="fix_container visa__inner">
+            <div class="visa__inner__single">
+                <div class="icon">
+                    <img src="./img/subtract.svg" alt="plane">
+                </div>
+                <div class="dtls">
+                    <h4>Can I travel to…?</h4>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+            <div class="visa__inner__single">
+                <div class="icon">
+                    <img src="./img/flight.svg" alt="flight">
+                </div>
+                <div class="dtls">
+                    <h4>Track your Flight Status</h4>
+                    <button class="btn">Track Flight</button>
+                </div>
+            </div>
+            <div class="visa__inner__single">
+                <div class="icon">
+                    <img src="./img/package.svg" alt="globe">
+                </div>
+                <div class="dtls">
+                    <h4>Track Visa Application Status</h4>
+                    <form action="#">
+                        <input type="text" placeholder="St Ref. No." name="ref" id="">
+                        <button class="btn">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of visa section -->
+
+    <!-- ad section -->
+    <div class="full_container ad">
+        <div class="fix_container ad__inner">
+            <div class="ad__inner__single ad__inner--fix">
+                <div class="img">
+                    <img src="./img/fix-ad.png" alt="ad">
+                </div>
+                <div class="ad_text">
+                    <small>Only for EBL Visa cardholders</small>
+                    <h3>Up to 80% discount on domestic hotels & resorts</h3>
+                </div>
+            </div>
+            <div class="slide_ad">
+                <div class="owl-carousel owl-theme carousel_ad">
+                    <div class="slide_ad__inner">
+                        <div class="img">
+                            <img src="./img/slide1.png" alt="ad">
+                        </div>
+                        <div class="ad_text">
+                            <small>ShareTrip Introduces</small>
+                            <h3>Bangladesh's first ever travel credit card 'SkyTrip'</h3>
+                        </div>
+                    </div>
+                    <div class="slide_ad__inner">
+                        <div class="img">
+                            <img src="./img/slide1(2).png" alt="ad">
+                        </div>
+                        <div class="ad_text">
+                            <small>gpstar গ্রাহকদের শুধুমাত্র</small>
+                            <h3>সিকিউরিটি ডিপোজিটবিহীন ইন্টারন্যাশনাল রোমিং প্যাকেজ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_ad">
+                <div class="owl-carousel owl-theme carousel_ad">
+                    <div class="slide_ad__inner">
+                        <div class="img">
+                            <img src="./img/slide2.png" alt="ad">
+                        </div>
+                        <div class="ad_text">
+                            <small>Only for EBL cardholders</small>
+                            <h3>Up to 18% discount on International Flights</h3>
+                        </div>
+                    </div>
+                    <div class="slide_ad__inner">
+                        <div class="img">
+                            <img src="./img/slide2(2).png" alt="ad">
+                        </div>
+                        <div class="ad_text">
+                            <small>gpstar গ্রাহকদের শুধুমাত্র</small>
+                            <h3> ফ্লাইট টিকেটে জন্য ১০% পর্যন্ত ছাড়</h3>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end of ad section -->
+
+    <!-- deals -->
+    <div class="full_container deals">
+        <div class="fix_container deals__inner">
+            <h2>Lightning Deals</h2>
+            <div class="owl-carousel owl-theme carousel_deals">
+
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals1.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Catch the excitement of "City of Joy"!...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Kolkata, India</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 37,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>3610</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals2.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Laos: Land of a Million Elephants!...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Nagpur, India</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 62,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>2410</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals3.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Thailand: Be enchanted...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Pattya, Thailand</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 87,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>5620</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals4.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Maldives: 2 nights & 3 days of thrilling experience with US ...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Paradise, Maldive</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 97,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>6610</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals5.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Catch the excitement of "City of Joy"!...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Kolkata, India</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 37,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>3610</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals6.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Laos: Land of a Million Elephants!...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Nagpur, India</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 62,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>2410</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals7.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Thailand: Be enchanted...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Pattya, Thailand</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 87,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>5620</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals8.jpg" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Maldives: 2 nights & 3 days of thrilling experience with US ...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Paradise, Maldive</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 97,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>6610</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__inner__single">
+                    <div class="img">
+                        <img src="./img/deals9.png" alt="thumb">
+                        <div class="btns">
+                            <button class="btn">
+                                <i class="fa fa-light fa-clock"></i>
+                                <time>12:00:00:00</time>
+                            </button>
+                            <button class="btn">
+                                <i class="fa fa-regular fa-trending"></i>
+                                <span>trending</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>Catch the excitement of "City of Joy"!...</h3>
+                        <div class="meta">
+                            <div class="time_before meta_single">
+                                <i class="fa fa-light fa-calendar"></i>
+                                <span>3 day</span>
+                            </div>
+                            <div class="location meta_single">
+                                <i class="fa fa-light fa-location"></i>
+                                <span>Kolkata, India</span>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <h6>BDT 37,712/ <small>person</small></h6>
+                        </div>
+                        <div class="pound">
+                            <img src="./img/currency.svg" alt="currency">
+                            <span>3610</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of deals -->
+
+    <!-- package section -->
+    <div class="full_container package">
+        <div class="fix_container package__inner">
+            <h2>Packages in Popular Destinations</h2>
+            <div class="package__inner__top">
+                <div class="num_package">
+                    <img src="./img/package.svg" alt="package">
+                    <span>25 Packages</span>
+                </div>
+                <h3>Maldives</h3>
+                <p>Starts From <strong>BDT 27,500</strong></p>
+            </div>
+            <div class="package__inner__body">
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post2.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Cox's Bazar</h3>
+                    <p>Starts From <strong>BDT 4,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post3.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Kathmandu</h3>
+                    <p>Starts From <strong>BDT 54,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post4.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Istanbul</h3>
+                    <p>Starts From <strong>BDT 64,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post5.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Dubai</h3>
+                    <p>Starts From <strong>BDT 24,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post6.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Cairo</h3>
+                    <p>Starts From <strong>BDT 9,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post7.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Agra</h3>
+                    <p>Starts From <strong>BDT 7,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post8.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>25 Packages</span>
+                    </div>
+                    <h3>Colombo</h3>
+                    <p>Starts From <strong>BDT 6,500</strong></p>
+                </div>
+                <div class="package__inner__body__single">
+                    <div class="img">
+                        <img src="./img/post9.png" alt="thumb">
+                    </div>
+                    <div class="num_package">
+                        <img src="./img/package.svg" alt="package">
+                        <span>62 Packages</span>
+                    </div>
+                    <h3>Bangkok</h3>
+                    <p>Starts From <strong>BDT 24,500</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of package section -->
+
+    <!-- END OF MAIN -->    
+
+    <!-- HEADER -->
+
+    <!-- END OF HEADER -->
+    <!-- HEADER -->
+
+    <!-- END OF HEADER -->
+    <!-- HEADER -->
+
+    <!-- END OF HEADER -->
+
+
+    <!-- END OF FOOTER -->
+    <div class="full_container footer">
+        <div class="fix_container footer__inner">
+
+        </div>
+    </div>
+
+    <!-- <div class="owl-carousel owl-theme">
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div> -->
+    <!-- FOOTER -->
+
+    <!-- custom jquery -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

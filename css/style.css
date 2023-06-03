@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #007bff;
+  --dark: #343a40;
+  --grey: #4c4c4c;
+  --font-family-sans-serif: "Roboto", sans-serif;
+  --font-family-monospace: "Roboto Mono", monospace;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+  background-color: #ffffff;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 1.6rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.full_container {
+  width: 100%;
+}
+
+.fix_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: var(--blue);
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.btn_orange {
+  background: orange;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+/* =========== header =================*/
+.header {
+  padding: 1rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header__inner__left a img {
+  max-width: 17.8rem;
+}
+.header__inner__mid ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.header__inner__mid ul li {
+  position: relative;
+}
+.header__inner__mid ul li ul {
+  position: absolute;
+  padding: 7px 15px;
+}
+.header__inner__mid ul li ul li {
+  margin-bottom: 2rem;
+}
+.header__inner__mid ul li ul li:last-child {
+  margin-bottom: 0;
+}
+.header__inner__mid ul li ul li a {
+  color: var(--blue);
+}
+.header__inner__right {
+  display: flex;
+  gap: 3.5rem;
+}
+.header__inner__right button {
+  display: flex;
+  gap: 1rem;
+}
+.header__inner__right button i {
+  font-size: 2.5rem;
+}
+
+/*=========== hero section ==============*/
+.hero {
+  background: url("../img/banner.png") no-repeat;
+  background-size: cover;
+}
+.hero__inner h1 {
+  text-align: center;
+  color: white;
+}
+.hero__inner__box {
+  position: relative;
+  top: 3rem;
+  border-radius: 10px;
+  background-color: rgba(253, 253, 253, 0.5);
+}
+.hero__inner__box__head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F7F7F7;
+  margin-bottom: 3rem;
+}
+.hero__inner__box__head img {
+  margin-right: 1.5rem;
+}
+.hero__inner__box__body {
+  margin-bottom: 5rem;
+}
+.hero__inner__box__body .options {
+  text-align: center;
+}
+.hero__inner__box__body .options .btns {
+  display: inline-block;
+  border-radius: 20px;
+}
+.hero__inner__box__body .options .btns button {
+  padding: 1rem 3rem;
+}
+.hero__inner__box__body .options .btns button:hover {
+  background-color: var(--blue);
+}
+.hero__inner__box__body .flight_details {
+  display: flex;
+  gap: 1rem;
+}
+.hero__inner__box__body .flight_details .details_single {
+  border-radius: 4px;
+  background-color: white;
+}
+.hero__inner__box__body .flight_details .details_single .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1rem;
+  padding-left: 2rem;
+  border-right: 1px solid #F7F7F7;
+}
+.hero__inner__box__body .flight_details .details_single .item:last-of-type {
+  border: none;
+}
+.hero__inner__box__body .flight_details .details_single .item small {
+  color: var(--grey);
+}
+.hero__inner__box__body .flight_details .details_single .item p {
+  color: var(--grey);
+}
+.hero__inner__box__body .flight_details .details_single .toggle_box {
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 5px gray;
+}
+.hero__inner__box__body .flight_details .details_single .ft_box {
+  border-radius: 5px;
+}
+.hero__inner__box__body .flight_details .details_single .ft_box ul li {
+  padding: 1.3rem 1rem;
+}
+.hero__inner__box__body .flight_details .details_single .ft_box ul li span {
+  margin-right: 1rem;
+}
+.hero__inner__box__body .flight_details .details_single .ft_box ul li:hover {
+  background-color: var(--blue);
+}
+.hero__inner__box__body .flight_details .details_single .np_box {
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .head {
+  display: flex;
+  justify-content: space-between;
+  color: #676767;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body {
+  border-bottom: 1px solid #F5F5F5;
+  margin-bottom: 2rem;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .single .count {
+  font-weight: bold;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .single .dtls p {
+  color: var(--grey);
+  font-size: 12px;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .single .in_dr {
+  color: var(--blue);
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .single .in_dr button {
+  background: none;
+  border: 1px solid var(--blue);
+  padding: 2rem;
+}
+.hero__inner__box__body .flight_details .details_single .np_box .body .foot ul li.active {
+  display: flex;
+  justify-content: space-between;
+  color: var(--blue);
+}
+.hero__inner__box__foot button {
+  font-size: 2.2rem;
+}
+
+/* visa section */
+.visa {
+  padding-top: 7rem;
+  padding-bottom: 4.5rem;
+  background-color: #F5F5F5;
+}
+.visa__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.visa__inner__single {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.visa__inner__single .icon {
+  width: 7rem;
+}
+.visa__inner__single .dtls h4 {
+  margin-bottom: 2rem;
+}
+.visa__inner__single .dtls form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.visa__inner__single .dtls form input {
+  padding: 7px;
+}
+.visa__inner__single .dtls form input::-moz-placeholder {
+  color: var(--grey);
+}
+.visa__inner__single .dtls form input::placeholder {
+  color: var(--grey);
+}
+
+/*ad section*/
+.ad {
+  padding-top: 5rem;
+  padding-bottom: 3.5rem;
+}
+.ad__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.ad__inner__single {
+  max-width: 30%;
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.ad__inner__single .img {
+  flex: 1;
+}
+.ad__inner__single .img img {
+  width: 100%;
+}
+.ad__inner__single .ad_text {
+  flex: 2;
+}
+.ad__inner .slide_ad {
+  max-width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.ad__inner .slide_ad__inner {
+  display: flex;
+  gap: 1.5rem;
+}
+.ad__inner .slide_ad__inner .img {
+  flex: 1;
+}
+.ad__inner .slide_ad__inner .img img {
+  width: 100%;
+}
+.ad__inner .slide_ad__inner .ad_text {
+  flex: 2;
+}
+
+/*deals section*/
+.deals {
+  padding-bottom: 6rem;
+}
+.deals__inner__single .img {
+  position: relative;
+}
+.deals__inner__single .img img {
+  width: 100%;
+}
+.deals__inner__single .img .btns {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.deals__inner__single .texts h3 {
+  margin-bottom: 2rem;
+}
+.deals__inner__single .texts .meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.deals__inner__single .texts .meta_single {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.deals__inner__single .texts .amount {
+  margin-bottom: 1rem;
+}
+.deals__inner__single .texts .pound {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.deals__inner__single .texts .pound img {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+/*package section*/
+.package__inner__top {
+  padding-top: 13rem;
+  border-radius: 10px;
+  background: url("../img/post1.png") no-repeat;
+  background-size: cover;
+  color: white;
+}
+.package__inner__top .num_package {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.package__inner__top h3 {
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.package__inner__body {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.package__inner__body .img {
+  border-radius: 15px;
+}
+.package__inner__body .img img {
+  width: 100%;
+}
+.package__inner__body .num_package {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--grey);
+}
+.package__inner__body h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.package__inner__body p {
+  color: var(--blue);
+}
+
+/* =========== visa section =================*//*# sourceMappingURL=style.css.map */
