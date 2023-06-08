@@ -1,0 +1,438 @@
+:root {
+  --blue: #1882ff;
+  --dark: #343a40;
+  --grey: #4c4c4c;
+  --font-family-sans-serif: "Roboto", sans-serif;
+  --font-family-monospace: "Roboto Mono", monospace;
+  --bxShd: 0 0 3px #e7e7e7;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/* modify search*/
+.modify {
+  background-color: #f7f7f8;
+  box-shadow: 0 4px 2px #ddd;
+  margin-bottom: 5rem;
+}
+.modify .modify__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.modify .modify__inner h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* main section */
+.result__inner {
+  display: flex;
+  gap: 2.5rem;
+}
+.result__inner aside {
+  flex: 1;
+}
+.result__inner aside .sidebar .time_left {
+  padding: 2rem 0;
+  box-shadow: var(--bxShd);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.result__inner aside .sidebar .time_left p {
+  font-size: 1.4rem;
+}
+.result__inner aside .sidebar .time_left .body {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.result__inner aside .sidebar .time_left .body .colon {
+  margin-top: 3px;
+  color: var(--blue);
+}
+.result__inner aside .sidebar .time_left .body button {
+  display: block;
+  margin-bottom: 1rem;
+}
+.result__inner aside .sidebar .num_people {
+  box-shadow: var(--bxShd);
+  padding: 1.8rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.result__inner aside .sidebar .num_people i {
+  color: var(--blue);
+  font-size: 1.4rem;
+}
+.result__inner aside .sidebar .filter {
+  box-shadow: var(--bxShd);
+}
+.result__inner aside .sidebar .filter h3 {
+  font-size: 1.6rem;
+}
+.result__inner aside .sidebar .filter__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1.3rem;
+  padding-bottom: 3.4rem;
+  border-bottom: 1px solid gainsboro;
+}
+.result__inner aside .sidebar .filter__head button {
+  font-size: 1.8rem;
+  border: none;
+  padding: 5px;
+  color: var(--blue);
+  background: none;
+}
+.result__inner aside .sidebar .filter__head button:hover {
+  background-color: lightblue;
+}
+.result__inner aside .sidebar .filter__price {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid gainsboro;
+}
+.result__inner aside .sidebar .filter__price h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+.result__inner aside .sidebar .filter__price .min_max {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+.result__inner aside .sidebar .filter__price .min_max div {
+  width: 38%;
+}
+.result__inner aside .sidebar .filter__price .min_max span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 8px;
+  display: inline-block;
+}
+.result__inner aside .sidebar .filter__price .bar {
+  display: flex;
+  margin-bottom: 2.8rem;
+  align-items: center;
+}
+.result__inner aside .sidebar .filter__price .bar span {
+  background-color: var(--blue);
+}
+.result__inner aside .sidebar .filter__price .bar .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #978d8d;
+}
+.result__inner aside .sidebar .filter__price .bar .line {
+  width: 90%;
+  height: 6.6px;
+}
+.result__inner aside .sidebar .filter__schedule {
+  border-bottom: 1px solid gainsboro;
+  padding: 1.5rem;
+}
+.result__inner aside .sidebar .filter__schedule h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+.result__inner aside .sidebar .filter__schedule .time h4 {
+  color: #727375;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+.result__inner aside .sidebar .filter__schedule .time ul li {
+  padding: 1rem;
+  border: 1px solid rgb(236, 236, 236);
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+.result__inner aside .sidebar .filter__schedule .time ul li:hover {
+  border: 1px solid var(--blue);
+}
+.result__inner aside .sidebar .filter__schedule .arrival {
+  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+}
+.result__inner aside .sidebar .filter .opt_select {
+  border-bottom: 1px solid gainsboro;
+  padding: 1.5rem;
+}
+.result__inner aside .sidebar .filter .opt_select h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+.result__inner aside .sidebar .filter .opt_select .opt {
+  margin-bottom: 1.5rem;
+}
+.result__inner aside .sidebar .filter .opt_select label {
+  margin-left: 1rem;
+}
+.result__inner aside .sidebar .filter .opt_select .item {
+  margin-bottom: 1.8rem;
+}
+.result__inner main {
+  flex: 3;
+}
+.result__inner main .mainbar .avail_flights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.result__inner main .mainbar .flight_items {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eae6e6;
+  box-shadow: var(--bxShd);
+  border-radius: 5px;
+}
+.result__inner main .mainbar .flight_items img {
+  max-width: 3rem;
+}
+.result__inner main .mainbar .flight_items .nav_icon {
+  flex: 0.5;
+  text-align: center;
+  height: 5.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result__inner main .mainbar .flight_items .left_icon {
+  border-right: 1px solid #eae6e6;
+}
+.result__inner main .mainbar .flight_items .right_icon {
+  border-left: 1px solid #eae6e6;
+}
+.result__inner main .mainbar .flight_items .items {
+  flex: 9;
+  display: flex;
+}
+.result__inner main .mainbar .flight_items .items .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-right: 1px solid #eae6e6;
+  padding: 1rem 3rem 1rem 6px;
+}
+.result__inner main .mainbar .flight_types {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: var(--bxShd);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.result__inner main .mainbar .flight_types .ft_single {
+  border-right: 1px solid #eae6e6;
+  padding: 8px 0;
+  padding-left: 1.5rem;
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.result__inner main .mainbar .flight_types .ft_single:hover {
+  background-color: var(--blue);
+}
+.result__inner main .mainbar .flight_types .ft_single:last-of-type {
+  border: none;
+}
+.result__inner main .mainbar .flight_options {
+  overflow: hidden;
+}
+.result__inner main .mainbar .flight_options .fo {
+  box-shadow: var(--bxShd);
+}
+.result__inner main .mainbar .flight_options img {
+  max-width: 3rem;
+}
+.result__inner main .mainbar .flight_options .fo_single {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  border-radius: 5px;
+}
+.result__inner main .mainbar .flight_options .fo_single .item {
+  flex: 1;
+  padding: 2rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .its {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .its .text p {
+  font-size: 1.2rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .its .text small {
+  font-size: 1rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .its .text p,
+.result__inner main .mainbar .flight_options .fo_single .its .text small {
+  color: var(--grey);
+}
+.result__inner main .mainbar .flight_options .fo_single .its .text h6 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+.result__inner main .mainbar .flight_options .fo_single .ims .img {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+.result__inner main .mainbar .flight_options .fo_single .ims .img span,
+.result__inner main .mainbar .flight_options .fo_single .ims .img small {
+  color: var(--grey);
+}
+.result__inner main .mainbar .flight_options .fo_single .ims .img small {
+  font-size: 1rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .ims .img span {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+.result__inner main .mainbar .flight_options .fo_single .right {
+  background-color: #e3f2ff;
+  position: relative;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: end;
+}
+.result__inner main .mainbar .flight_options .fo_single .right p {
+  margin-bottom: 5px;
+}
+.result__inner main .mainbar .flight_options .fo_single .right .price {
+  font-size: 2.7rem;
+  color: #346cdb;
+  margin-bottom: 5px;
+}
+.result__inner main .mainbar .flight_options .fo_single .right .discount {
+  text-decoration: line-through;
+  color: #1767c6;
+  margin-bottom: 1.5rem;
+}
+.result__inner main .mainbar .flight_options .fo_single .right .book {
+  margin-bottom: 2.4rem;
+  display: block;
+  width: 125px;
+}
+.result__inner main .mainbar .flight_options .fo_single .right .special {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  border-radius: 16px;
+  background-color: #346cdb;
+  border: none;
+  color: white;
+  padding: 7px;
+}
+.result__inner main .mainbar .flight_options .fo_single .right .special i {
+  margin-right: 6px;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt {
+  border: 1px solid #eee;
+  display: flex;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dtls {
+  flex: 1;
+  padding: 1.5rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy {
+  flex: 0.7;
+  padding: 1.5rem;
+  border-left: 1px solid gainsboro;
+  color: #4d4c4c;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy_text small {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy_text p {
+  margin-bottom: 1.2rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .toggle_btns button:last-of-type {
+  margin-left: -4px;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .trans {
+  background-color: transparent;
+  color: #686868;
+  border: 1px solid gainsboro;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .toggle_btns {
+  margin-bottom: 1.8rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dtls_single .dts_top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body {
+  display: flex;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body .right {
+  display: flex;
+  flex: 1.3;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body .right .img {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+  margin-right: 1.8rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body .left {
+  flex: 1;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body h6 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body h6 span {
+  font-weight: bold;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body p, .result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body small {
+  color: #6f6f6f;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_btm {
+  margin-top: 1rem;
+  font-weight: 401;
+  margin-bottom: 1.7rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .baggage h6 {
+  font-size: 1.9rem;
+  color: black;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .baggage p {
+  margin-top: 1px;
+  margin-bottom: 1rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .baggage p .title {
+  margin-right: 9rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .baggage {
+  margin-top: 2rem;
+}/*# sourceMappingURL=flight-search.css.map */
