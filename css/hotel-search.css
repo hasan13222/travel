@@ -1,0 +1,190 @@
+.search_hotel form {
+  position: relative;
+}
+.search_hotel form label {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  display: inline-block;
+  margin-left: 0;
+}
+.search_hotel form input {
+  width: 100%;
+  padding: 1.4rem 1rem;
+  border: 1px solid gainsboro;
+  background-color: #f4f4f4;
+}
+.search_hotel form i {
+  position: absolute;
+  top: 3.8rem;
+  right: 1rem;
+  color: blue;
+}
+
+.result__inner aside .sidebar .filter__price .min_max {
+  align-items: center;
+}
+
+.result__inner aside .sidebar .filter__price .min_max div {
+  width: auto;
+}
+
+.filter__property .item i {
+  color: #fb9400;
+}
+
+.opt_select .item:nth-of-type(1n + 5) {
+  display: none;
+}
+
+.see_more button {
+  background: none;
+  border: none;
+  padding-left: 3rem;
+  color: var(--blue);
+  font-size: 1.6rem;
+}
+
+.avail_hotels .best_match {
+  position: relative;
+}
+.avail_hotels .best_match button {
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.avail_hotels .best_match button i {
+  padding-left: 5px;
+}
+.avail_hotels .best_match ul {
+  position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  top: 25px;
+  right: 0;
+  display: none;
+  box-shadow: var(--bxShd);
+}
+.avail_hotels .best_match ul li {
+  padding: 7px 15px;
+  border-bottom: 1px solid gainsboro;
+}
+.avail_hotels .best_match ul li:last-child {
+  border: none;
+}
+
+.result__inner main .mainbar .hotel_options .fo .mid {
+  flex: 1.8;
+}
+.result__inner main .mainbar .hotel_options .fo .mid .location {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 5px;
+}
+.result__inner main .mainbar .hotel_options .fo .mid .location i {
+  color: var(--blue);
+}
+.result__inner main .mainbar .hotel_options .fo .mid .price_share {
+  display: flex;
+  gap: 2rem;
+}
+.result__inner main .mainbar .hotel_options .fo .mid .ps {
+  flex: unset;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.result__inner main .mainbar .hotel_options .fo .mid .ims {
+  flex-direction: column;
+}
+.result__inner main .mainbar .hotel_options .fo .mid h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+.result__inner main .mainbar .hotel_options .fo .mid .star i {
+  margin-right: 3px;
+  color: #f9a825;
+}
+.result__inner main .mainbar .hotel_options .fo .left .ils img {
+  min-width: 100%;
+  height: 215px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.result__inner main .mainbar .hotel_options .fo .left .ils {
+  display: block;
+  margin: 0;
+}
+.result__inner main .mainbar .hotel_options .fo .right {
+  background-color: transparent;
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  color: black;
+}
+.result__inner main .mainbar .hotel_options .fo .right p {
+  color: #797979;
+  margin-bottom: 0.6rem;
+}
+.result__inner main .mainbar .hotel_options .fo .right .discount {
+  margin-top: 0.5rem;
+  color: black;
+}
+.result__inner main .mainbar .hotel_options .fo .right .price {
+  display: block;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  color: #777474;
+}
+.result__inner main .mainbar .hotel_options .fo .right .percent {
+  color: #f73;
+  font-weight: 700;
+  margin-right: 7px;
+}
+.result__inner main .mainbar .hotel_options .fo .right .tk {
+  font-weight: bold;
+  color: black;
+  font-size: 1.6rem;
+}
+.result__inner main .mainbar .hotel_options .fo .right .discount small {
+  color: #6c6b6b;
+}
+.result__inner main .mainbar .hotel_options .fo .right p.vat {
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .result__inner main .mainbar .flight_options .fo_single .mid {
+    flex: 1.2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result__inner main .mainbar .flight_options .fo_single {
+    justify-content: center;
+  }
+  .result__inner main .mainbar .hotel_options .fo .mid .location {
+    justify-content: center;
+  }
+  .result__inner main .mainbar .hotel_options .fo .mid .price_share {
+    justify-content: center;
+  }
+  .result__inner main .mainbar .flight_options .fo_single .right {
+    text-align: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 0;
+  }
+  .result__inner main .mainbar .flight_options .fo_single .item {
+    flex: auto;
+    text-align: center;
+  }
+  .result__inner main .mainbar .flight_options .fo_single .left {
+    min-width: 227px;
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=hotel-search.css.map */

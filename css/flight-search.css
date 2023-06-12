@@ -71,6 +71,9 @@ p {
   color: var(--blue);
   font-size: 1.4rem;
 }
+.result__inner aside .sidebar .filter_btn {
+  display: none;
+}
 .result__inner aside .sidebar .filter {
   box-shadow: var(--bxShd);
 }
@@ -191,6 +194,34 @@ p {
 .result__inner main {
   flex: 3;
 }
+.result__inner main .top_page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  color: #151515;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.result__inner main .tp_right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.result__inner main .tp_right .blue {
+  border: none;
+  background-color: var(--blue);
+  padding: 13px 15px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.result__inner main .main_btm p {
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 3rem;
+}
 .result__inner main .mainbar .avail_flights {
   display: flex;
   justify-content: space-between;
@@ -258,8 +289,44 @@ p {
 .result__inner main .mainbar .flight_options {
   overflow: hidden;
 }
+.result__inner main .mainbar .flight_options .fo:hover {
+  box-shadow: 0 0 20px #aba9a9;
+}
 .result__inner main .mainbar .flight_options .fo {
-  box-shadow: var(--bxShd);
+  box-shadow: 0 0 10px #dfdbdb;
+  margin-bottom: 2rem;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+.result__inner main .mainbar .flight_options .fo .fobt.active {
+  display: flex;
+}
+.result__inner main .mainbar .flight_options .fo .active + .fobb {
+  margin-top: 0;
+}
+.result__inner main .mainbar .flight_options .fo .fobb {
+  display: flex;
+  align-items: center;
+  margin-top: -3rem;
+}
+.result__inner main .mainbar .flight_options .fo .price {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.result__inner main .mainbar .flight_options .fo .fobb .show {
+  flex: 1;
+  height: 50px;
+  background: none;
+  border: none;
+  background-color: #e3f2ff;
+  color: var(--blue);
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 1.5rem;
 }
 .result__inner main .mainbar .flight_options img {
   max-width: 3rem;
@@ -353,17 +420,87 @@ p {
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt {
   border: 1px solid #eee;
-  display: flex;
+  display: none;
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt .dtls {
   flex: 1;
   padding: 1.5rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dtls .dksk,
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dtls .skdk {
+  display: none;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dtls .active {
+  display: block;
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt .policy {
   flex: 0.7;
   padding: 1.5rem;
   border-left: 1px solid gainsboro;
   color: #4d4c4c;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .toggle {
+  background: none;
+  border: none;
+  color: #1882ff;
+  font-weight: bold;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .policy_text,
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .baggage {
+  display: none;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .active {
+  display: block;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: rgba(70, 69, 69, 0.7215686275);
+  display: none;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner {
+  width: 892px;
+  height: 458px;
+  overflow: scroll;
+  background-color: white;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid gainsboro;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .top span,
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .top i {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .body {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .body .left {
+  flex: 2;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .body .right {
+  flex: 1;
+  background-color: #f0eff5;
+  padding: 1.7rem;
+  line-height: 19px;
+  border-radius: 9px;
+}
+.result__inner main .mainbar .flight_options .fo_btm .fobt .policy .modal__inner .body h6 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt .policy_text small {
   font-size: 1.1rem;
@@ -414,7 +551,8 @@ p {
 .result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body h6 span {
   font-weight: bold;
 }
-.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body p, .result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body small {
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body p,
+.result__inner main .mainbar .flight_options .fo_btm .fobt .dts_body small {
   color: #6f6f6f;
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt .dts_btm {
@@ -435,4 +573,55 @@ p {
 }
 .result__inner main .mainbar .flight_options .fo_btm .fobt .baggage {
   margin-top: 2rem;
-}/*# sourceMappingURL=flight-search.css.map */
+}
+/* media quries for flight search result section*/
+@media only screen and (max-width: 1199px) {
+  .result__inner{
+      flex-wrap: wrap;
+  }
+  .result__inner aside{
+      min-width: 500px;
+  }
+  .result__inner aside .sidebar .num_people{
+      justify-content: center;
+  }
+  .result__inner aside .sidebar .filter_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--blue);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 5px;
+    }
+    .result__inner aside .sidebar .filter_btn span{
+      font-size: 2.3rem;
+    }
+    .result__inner aside .sidebar .filter{
+      display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .result__inner aside {
+      min-width: 390px;
+    }
+  .result__inner main {
+      min-width: 390px;
+    }
+    .result__inner main {
+      flex: 1;
+      max-width: 98%;
+    }
+    .result__inner main .mainbar .flight_options .fo_single{
+      flex-wrap: wrap;
+    }
+    .result__inner main .mainbar .flight_options .fo_single .right{
+      align-items: center;
+    }
+    .result__inner main .mainbar .flight_options .fo .fobb .show{
+      background-color: none;
+    }
+    .result__inner main .mainbar .flight_options .fo .fobb{
+      margin-top: 0;
+    }
+}

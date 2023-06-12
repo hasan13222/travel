@@ -106,16 +106,14 @@ i:hover {
 }
 .header__inner__mid ul li {
   position: relative;
+  padding: 10px 0;
 }
 .header__inner__mid ul li a {
   color: #000;
 }
-.header__inner__mid ul li:hover ul {
+.header__inner__mid ul li ul {
   background-color: #fff;
   box-shadow: 0 0 9px #bfbfbf;
-}
-.header__inner__mid ul li:hover ul li {
-  visibility: visible;
 }
 .header__inner__mid ul li ul {
   position: absolute;
@@ -125,15 +123,23 @@ i:hover {
   border-radius: 5px;
   padding: 0;
   margin-top: 0.5rem;
+  left: -9999999px;
 }
 .header__inner__mid ul li ul li {
   margin-bottom: 0;
   padding: 8px 1.3rem;
   white-space: nowrap;
-  position: static;
-  visibility: hidden;
 }
-.header__inner__mid ul li ul li:hover {
+.header__inner__mid ul li:hover ul {
+  left: 0;
+}
+.header__inner__mid ul li:hover a{
+  color: #1261bf;
+}
+.header__inner__mid ul li:hover ul li:hover a{
+  color: black;
+}
+.header__inner__mid ul li:hover ul li {
   background-color: #f5f5f5;
 }
 .header__inner__mid ul li ul li a {

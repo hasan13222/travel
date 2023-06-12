@@ -93,3 +93,62 @@ $(document).ready(function(){
     
 
   });
+
+
+
+//   flight search page
+
+$(document).ready(function(){
+    // show more toggle in flight search item
+    $(".policy_text .toggle").click(function(){
+        $(".policy_text .modal").css("display","flex");
+
+        $(".policy_text .modal .fa-xmark").click(function(){
+
+            $(".policy_text .modal").hide();
+        });
+
+    });
+
+    // details and refund toggle    
+
+    $(".dtls .toggle_btns button").click(function(){
+        $(this).parent().siblings().toggleClass("active");
+
+    });
+
+    $(".policy .toggle_btns button").click(function(){
+        $(this).parent().siblings().toggleClass("active");
+
+    });
+
+    $(".fobb .show").click(function(){
+        $(this).find(".fa-angle-down").toggleClass("fa-angle-up");
+    });
+
+    $(".fobb .active").click(function(){
+        $(this).parent().siblings().toggleClass("active");
+    });
+
+    // filter toggle
+    $(".sidebar .filter_btn").click(function(){
+        $(".sidebar .filter").toggle();
+
+    });
+
+
+
+    // hotel search page
+    // see more toggle
+    $(".sidebar .see_more").click(function(){
+        $(this).nextAll().toggle();
+        $(this).find("span").toggle();
+
+    });
+
+    // best match toggle
+    $(".mainbar .best_match").click(function(){
+        $(".mainbar .best_match ul").toggle();
+
+    });
+});
